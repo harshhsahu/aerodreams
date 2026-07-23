@@ -3,6 +3,7 @@ import Reveal from "@/components/Reveal";
 import CountUp from "@/components/CountUp";
 import LeadForm from "@/components/LeadForm";
 import { SectionHeading, Stars, SkyBackdrop, PhotoSlot } from "@/components/ui";
+import PlaneScene, { PlaneDivider } from "@/components/PlaneScene";
 import { ArrowRight, Check, Plane, iconMap } from "@/components/Icons";
 import {
   airlines, courses, placements, stats, testimonials, whyChoose, posts, waLink,
@@ -59,9 +60,7 @@ export default function Home() {
 
           {/* Hero visual */}
           <Reveal immediate delay={0.15} className="relative">
-            <div className="relative animate-float">
-              <PhotoSlot label="Live mock-cabin training" tone="sky" ratio="aspect-[4/5]" className="shadow-2xl" />
-            </div>
+            <PlaneScene />
             <div className="absolute -bottom-5 -left-4 sm:-left-8 rounded-2xl bg-white text-ink shadow-xl p-4 w-44">
               <div className="flex items-center gap-2">
                 <Stars n={5} />
@@ -144,6 +143,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Plane divider */}
+      <PlaneDivider />
 
       {/* ===================== COURSES ===================== */}
       <section className="relative py-20 md:py-28 bg-cloud overflow-hidden">

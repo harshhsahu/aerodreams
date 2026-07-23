@@ -136,6 +136,46 @@ body {
 }
 .animate-float { animation: float-y 6s ease-in-out infinite; }
 
+/* Plane scene ------------------------------------------------ */
+/* Drifting clouds */
+@keyframes cloud-drift {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(38px); }
+}
+.cloud-a { animation: cloud-drift 9s ease-in-out infinite alternate; }
+.cloud-b { animation: cloud-drift 13s ease-in-out infinite alternate-reverse; }
+.cloud-c { animation: cloud-drift 16s ease-in-out infinite alternate; }
+
+/* Dots flowing along the flight route toward the destination */
+@keyframes route-march {
+  to { stroke-dashoffset: -22; }
+}
+.route-march { animation: route-march 1.4s linear infinite; }
+
+/* Pulsing radar rings on the origin city */
+@keyframes ring-pulse {
+  0%   { transform: scale(.5); opacity: .55; }
+  100% { transform: scale(1.9); opacity: 0; }
+}
+.ring-pulse { transform-box: fill-box; transform-origin: center; animation: ring-pulse 3s ease-out infinite; }
+.ring-pulse-2 { animation-delay: 1.5s; }
+
+/* Twinkling stars / plane blip */
+@keyframes twinkle {
+  0%,100% { opacity: .25; }
+  50%     { opacity: 1; }
+}
+.twinkle { animation: twinkle 2.6s ease-in-out infinite; }
+
+/* Plane flying across a divider strip */
+@keyframes fly-across {
+  0%   { transform: translateX(-10vw) translateY(6px) rotate(-4deg); opacity: 0; }
+  8%   { opacity: 1; }
+  92%  { opacity: 1; }
+  100% { transform: translateX(110vw) translateY(-6px) rotate(-4deg); opacity: 0; }
+}
+.fly-across { animation: fly-across 14s linear infinite; }
+
 /* Reduce motion */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation: none !important; transition-duration: .01ms !important; scroll-behavior: auto !important; }
