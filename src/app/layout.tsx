@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import FloatingActions from "@/components/FloatingActions";
 import { site } from "@/lib/content";
 
+export const runtime = "edge";
+
 const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],

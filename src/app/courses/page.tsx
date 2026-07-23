@@ -5,6 +5,8 @@ import Reveal from "@/components/Reveal";
 import { ArrowRight, Check, iconMap } from "@/components/Icons";
 import { courses, masterProgram } from "@/lib/content";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Courses",
   description:

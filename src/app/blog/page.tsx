@@ -5,6 +5,8 @@ import Reveal from "@/components/Reveal";
 import { ArrowRight } from "@/components/Icons";
 import { posts } from "@/lib/content";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Blog",
   description:

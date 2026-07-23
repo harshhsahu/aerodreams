@@ -6,6 +6,8 @@ import CountUp from "@/components/CountUp";
 import { ArrowRight, Plane, Check } from "@/components/Icons";
 import { airlines, placements, stats, testimonials, waLink } from "@/lib/content";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Placements",
   description:

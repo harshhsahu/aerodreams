@@ -6,6 +6,8 @@ import Faq from "@/components/Faq";
 import { Check } from "@/components/Icons";
 import { admissionSteps, courses } from "@/lib/content";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Admissions",
   description:

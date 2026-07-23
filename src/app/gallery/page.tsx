@@ -5,6 +5,8 @@ import Reveal from "@/components/Reveal";
 import { ArrowRight } from "@/components/Icons";
 import { galleryItems } from "@/lib/content";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Gallery",
   description:

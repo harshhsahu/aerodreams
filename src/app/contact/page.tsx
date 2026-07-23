@@ -5,6 +5,8 @@ import LeadForm from "@/components/LeadForm";
 import { Phone, Mail, Pin, Clock, Whatsapp } from "@/components/Icons";
 import { site, telLink, waLink } from "@/lib/content";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "Contact",
   description:

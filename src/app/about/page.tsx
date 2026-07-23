@@ -6,6 +6,8 @@ import CountUp from "@/components/CountUp";
 import { ArrowRight, Check, iconMap } from "@/components/Icons";
 import { stats, whyChoose } from "@/lib/content";
 
+export const runtime = "edge";
+
 export const metadata: Metadata = {
   title: "About Us",
   description:

@@ -8,6 +8,8 @@ import {
   airlines, courses, placements, stats, testimonials, whyChoose, posts, waLink,
 } from "@/lib/content";
 
+export const runtime = "edge";
+
 export default function Home() {
   return (
     <>

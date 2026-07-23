@@ -1,0 +1,6 @@
+name = "aerodreams"
+compatibility_date = "2024-11-01"
+# nodejs_compat is required by the @cloudflare/next-on-pages runtime shim.
+compatibility_flags = ["nodejs_compat"]
+# @cloudflare/next-on-pages emits the deployable app here.
+pages_build_output_dir = ".vercel/output/static"
